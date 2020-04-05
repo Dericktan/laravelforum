@@ -46,57 +46,14 @@ Quick Note: If this is a new project, make sure to install the default user auth
 
     Quick tip: Make sure that you've created a database and added your database credentials in your `.env` file.
 
-6. Lastly, run the seed files to seed your database with a little data:
+6. Run the seed files to seed your database with a little data:
 
     ```
     php artisan db:seed --class=ChatterTableSeeder
     ```
 
-7. Inside of your master.blade.php file include a header and footer yield. Inside the head of your master or app.blade.php add the following:
 
-    ```
-    @yield('css')
-    ```
-
-    Then, right above the `</body>` tag of your master file add the following:
-
-    ```
-    @yield('js')
-    ```
-
-Now, visit your site.com/forums and you should see your new forum in front of you!
-
-### Upgrading
-
-Make sure that your composer.json file is requiring the latest version of chatter:
-
-```
-"devdojo/chatter": "0.2.*"
-```
-
-Then you'll run:
-
-```
-composer update
-```
-
-Next, you may want to re-publish the chatter assets, chatter config, and the chatter migrations by running the following:
-
-```
-php artisan vendor:publish --tag=chatter_assets --force
-php artisan vendor:publish --tag=chatter_config --force
-php artisan vendor:publish --tag=chatter_migrations --force
-```
-
-Next to make sure you have the latest database schema run:
-
-```
-php artisan migrate
-```
-
-And you'll be up-to-date with the latest version :)
-
-### Markdown editor
+7. Markdown editor
 
 If you are going to make use of the markdown editor instead of tinymce you will need to change that in your config/chatter.php:
 
@@ -110,14 +67,19 @@ In order to properly display the posts you will need to include the  `graham-cam
 composer require graham-campbell/markdown
 ```
 
-### VIDEOS
+8. Open your editor and change Event::fire in vender/devdojo/chatter/src/Controllers/ChatterDiscussionController.php and vender/devdojo/chatter/src/Controllers/ChatterPostController.php to Event::dispatch.
 
-[Introduction and Installation of Chatter](https://devdojo.com/episode/create-a-laravel-forum)
+9. Lastly, run  
+```
+composer require laravel/helpers
+```
 
-### Configuration
+Now, visit your site.com/forums and you should see your new forum in front of you!!!
 
-When you published the vendor assets you added a new file inside of your `config` folder which is called `config/chatter.php`. This file contains a bunch of configuration you can use to configure your forums
 
+
+
+------------------------------------------------------------------------------------------------------------------------------------
 ### Customization
 
 *CUSTOM CSS*
