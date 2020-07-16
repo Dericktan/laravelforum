@@ -1,8 +1,8 @@
 @extends(Config::get('chatter.master_file_extend'))
 
 @section(Config::get('chatter.yields.head'))
-	<link href="/vendor/devdojo/chatter/assets/css/chatter.css" rel="stylesheet">
-	<link href="/vendor/devdojo/chatter/assets/css/simplemde.min.css" rel="stylesheet">
+	<link href="/vendor/dericktan/chatter/assets/css/chatter.css" rel="stylesheet">
+	<link href="/vendor/dericktan/chatter/assets/css/simplemde.min.css" rel="stylesheet">
 @stop
 
 
@@ -163,7 +163,7 @@
 							<button id="submit_response" class="btn btn-success pull-right"><i class="chatter-new"></i> Submit Response</button>
 							@if(Config::get('chatter.email.enabled'))
 								<div id="notify_email">
-									<img src="/vendor/devdojo/chatter/assets/images/email.gif" class="chatter_email_loader">
+									<img src="/vendor/dericktan/chatter/assets/images/email.gif" class="chatter_email_loader">
 									<!-- Rounded toggle switch -->
 									<span>Notify me when someone replies</span>
 									<label class="switch">
@@ -206,8 +206,8 @@
 @elseif($chatter_editor == 'simplemde')
 	<script>var chatter_editor = 'simplemde';</script>
 @endif
-<script src="/vendor/devdojo/chatter/assets/vendor/tinymce/tinymce.min.js"></script>
-<script src="/vendor/devdojo/chatter/assets/js/tinymce.js"></script>
+<script src="/vendor/dericktan/chatter/assets/vendor/tinymce/tinymce.min.js"></script>
+<script src="/vendor/dericktan/chatter/assets/js/tinymce.js"></script>
 <script>
 	var my_tinymce = tinyMCE;
 	$('document').ready(function(){
@@ -219,8 +219,8 @@
 	});
 </script>
 
-<script src="/vendor/devdojo/chatter/assets/js/simplemde.min.js"></script>
-<script src="/vendor/devdojo/chatter/assets/js/chatter_simplemde.js"></script>
+<script src="/vendor/dericktan/chatter/assets/js/simplemde.min.js"></script>
+<script src="/vendor/dericktan/chatter/assets/js/chatter_simplemde.js"></script>
 
 
 <script>
@@ -320,6 +320,6 @@
 
 
 </script>
-<script src="/vendor/devdojo/chatter/assets/js/chatter.js"></script>
+<script src="/vendor/dericktan/chatter/assets/js/chatter.js"></script>
 
 @stop

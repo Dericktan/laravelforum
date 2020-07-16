@@ -7,7 +7,7 @@ Quick Note: If this is a new project, make sure to install the default user auth
 1. Include the package in your project
 
     ```
-    composer require "devdojo/chatter=0.2.*"
+    composer require "dericktan/chatter=0.2.*"
     ```
 
 2. Add the service provider to your `config/app.php` providers array:
@@ -57,7 +57,7 @@ In order to properly display the posts you will need to include the  `graham-cam
 composer require graham-campbell/markdown
 ```
 
-8. Open your editor and change Event::fire in vender/devdojo/chatter/src/Controllers/ChatterDiscussionController.php and vender/devdojo/chatter/src/Controllers/ChatterPostController.php to Event::dispatch.
+8. Open your editor and change Event::fire in vender/dericktan/chatter/src/Controllers/ChatterDiscussionController.php and vender/dericktan/chatter/src/Controllers/ChatterPostController.php to Event::dispatch.
 
 9. Lastly, run  
 ```
@@ -101,8 +101,8 @@ Since the forum uses your master layout file, you will need to include the neces
 
 In order to override Chatter's built in views, simply create a `chatter` folder in your `vendor` views folder, i.e. `ROOT/resources/views/vendor/chatter`. Then simply drop in the Chatter view files you would like to override.
 
-- [home.blade.php](https://github.com/thedevdojo/chatter/blob/master/src/Views/home.blade.php)
-- [discussion.blade.php](https://github.com/thedevdojo/chatter/blob/master/src/Views/discussion.blade.php)
+- [home.blade.php](https://github.com/thedericktan/chatter/blob/master/src/Views/home.blade.php)
+- [discussion.blade.php](https://github.com/thedericktan/chatter/blob/master/src/Views/discussion.blade.php)
 
 ### Custom Function Hooks for the forum
 

@@ -1,10 +1,10 @@
 @extends(Config::get('chatter.master_file_extend'))
 
 @section(Config::get('chatter.yields.head'))
-    <link href="/vendor/devdojo/chatter/assets/vendor/spectrum/spectrum.css" rel="stylesheet">
-	<link href="/vendor/devdojo/chatter/assets/css/chatter.css" rel="stylesheet">
+    <link href="/vendor/dericktan/chatter/assets/vendor/spectrum/spectrum.css" rel="stylesheet">
+	<link href="/vendor/dericktan/chatter/assets/css/chatter.css" rel="stylesheet">
 	@if($chatter_editor == 'simplemde')
-		<link href="/vendor/devdojo/chatter/assets/css/simplemde.min.css" rel="stylesheet">
+		<link href="/vendor/dericktan/chatter/assets/css/simplemde.min.css" rel="stylesheet">
 	@endif
 @stop
 
@@ -192,8 +192,8 @@
 
 
 @if( $chatter_editor == 'tinymce' || empty($chatter_editor) )
-	<script src="/vendor/devdojo/chatter/assets/vendor/tinymce/tinymce.min.js"></script>
-	<script src="/vendor/devdojo/chatter/assets/js/tinymce.js"></script>
+	<script src="/vendor/dericktan/chatter/assets/vendor/tinymce/tinymce.min.js"></script>
+	<script src="/vendor/dericktan/chatter/assets/js/tinymce.js"></script>
 	<script>
 		var my_tinymce = tinyMCE;
 		$('document').ready(function(){
@@ -203,12 +203,12 @@
 		});
 	</script>
 @elseif($chatter_editor == 'simplemde')
-	<script src="/vendor/devdojo/chatter/assets/js/simplemde.min.js"></script>
-	<script src="/vendor/devdojo/chatter/assets/js/chatter_simplemde.js"></script>
+	<script src="/vendor/dericktan/chatter/assets/js/simplemde.min.js"></script>
+	<script src="/vendor/dericktan/chatter/assets/js/chatter_simplemde.js"></script>
 @endif
 
-<script src="/vendor/devdojo/chatter/assets/vendor/spectrum/spectrum.js"></script>
-<script src="/vendor/devdojo/chatter/assets/js/chatter.js"></script>
+<script src="/vendor/dericktan/chatter/assets/vendor/spectrum/spectrum.js"></script>
+<script src="/vendor/dericktan/chatter/assets/js/chatter.js"></script>
 <script>
 	$('document').ready(function(){
 

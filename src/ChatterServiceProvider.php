@@ -14,7 +14,7 @@ class ChatterServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../public/assets' => public_path('vendor/devdojo/chatter/assets'),
+            __DIR__.'/../public/assets' => public_path('vendor/dericktan/chatter/assets'),
         ], 'chatter_assets');
 
         $this->publishes([
