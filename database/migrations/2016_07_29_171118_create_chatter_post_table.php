@@ -15,6 +15,7 @@ class CreateChatterPostTable extends Migration
             $table->boolean('markdown')->default(0);
             $table->boolean('locked')->default(0);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
