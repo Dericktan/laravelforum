@@ -8,10 +8,12 @@ class CreateChatterPostTable extends Migration
     public function up()
     {
         Schema::create('chatter_post', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('chatter_discussion_id')->unsigned();
-            $table->integer('user_id')->unsigned();
+            $table->id();
+            $table->foreignId('chatter_discussion_id')->unsigned();
+            $table->foreignId('user_id')->unsigned();
             $table->text('body');
+            $table->boolean('markdown')->default(0);
+            $table->boolean('locked')->default(0);
             $table->timestamps();
         });
     }
