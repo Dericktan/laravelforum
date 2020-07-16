@@ -1,8 +1,8 @@
 <?php
 
-namespace DevDojo\Chatter\Mail;
+namespace DerickTan\Chatter\Mail;
 
-use DevDojo\Chatter\Models\Discussion;
+use DerickTan\Chatter\Models\Discussion;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;

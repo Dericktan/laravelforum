@@ -63,7 +63,7 @@ before_script:
   - mv environment .env
 
   # Add the service providers
-  - sed 's/App\\Providers\\RouteServiceProvider\:\:class,/App\\Providers\\RouteServiceProvider\:\:class, DevDojo\\Chatter\\ChatterServiceProvider\:\:class,/g' config/app.php > config/app-temp.php
+  - sed 's/App\\Providers\\RouteServiceProvider\:\:class,/App\\Providers\\RouteServiceProvider\:\:class, DerickTan\\Chatter\\ChatterServiceProvider\:\:class,/g' config/app.php > config/app-temp.php
   - rm config/app.php
   - mv config/app-temp.php config/app.php
     

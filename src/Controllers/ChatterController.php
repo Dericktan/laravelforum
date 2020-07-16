@@ -1,9 +1,9 @@
 <?php
 
-namespace DevDojo\Chatter\Controllers;
+namespace DerickTan\Chatter\Controllers;
 
 use Auth;
-use DevDojo\Chatter\Models\Models;
+use DerickTan\Chatter\Models\Models;
 use Illuminate\Routing\Controller as Controller;
 
 class ChatterController extends Controller

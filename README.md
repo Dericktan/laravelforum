@@ -13,7 +13,7 @@ Quick Note: If this is a new project, make sure to install the default user auth
 2. Add the service provider to your `config/app.php` providers array:
 
     ```
-    DevDojo\Chatter\ChatterServiceProvider::class,
+    DerickTan\Chatter\ChatterServiceProvider::class,
     ```
 
 3. Publish the Vendor Assets files by running:
@@ -151,7 +151,7 @@ For example, to register a listener for the "before new discussion" event, add t
 
 ```php
 protected $listen = [
-    'DevDojo\Chatter\Events\ChatterBeforeNewDiscussion' => [
+    'DerickTan\Chatter\Events\ChatterBeforeNewDiscussion' => [
         'App\Listeners\HandleNewDiscussion',
     ],
 ];

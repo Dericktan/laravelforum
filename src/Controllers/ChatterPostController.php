@@ -1,13 +1,13 @@
 <?php
 
-namespace DevDojo\Chatter\Controllers;
+namespace DerickTan\Chatter\Controllers;
 
 use Auth;
 use Carbon\Carbon;
-use DevDojo\Chatter\Events\ChatterAfterNewResponse;
-use DevDojo\Chatter\Events\ChatterBeforeNewResponse;
-use DevDojo\Chatter\Mail\ChatterDiscussionUpdated;
-use DevDojo\Chatter\Models\Models;
+use DerickTan\Chatter\Events\ChatterAfterNewResponse;
+use DerickTan\Chatter\Events\ChatterBeforeNewResponse;
+use DerickTan\Chatter\Mail\ChatterDiscussionUpdated;
+use DerickTan\Chatter\Models\Models;
 use Event;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as Controller;

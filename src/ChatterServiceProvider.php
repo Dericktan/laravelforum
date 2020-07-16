@@ -1,6 +1,6 @@
 <?php
 
-namespace DevDojo\Chatter;
+namespace DerickTan\Chatter;
 
 use Illuminate\Support\ServiceProvider;
 

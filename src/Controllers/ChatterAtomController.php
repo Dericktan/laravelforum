@@ -1,9 +1,9 @@
 <?php
 
-namespace DevDojo\Chatter\Controllers;
+namespace DerickTan\Chatter\Controllers;
 
 use Carbon\Carbon;
-use DevDojo\Chatter\Models\Discussion;
+use DerickTan\Chatter\Models\Discussion;
 use Illuminate\Routing\Controller as Controller;
 use SimpleXMLElement;
 
