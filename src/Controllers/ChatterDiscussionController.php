@@ -11,6 +11,7 @@ use Event;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as Controller;
 use Validator;
+use Illuminate\Support\Str;
 
 class ChatterDiscussionController extends Controller
 {
@@ -87,7 +88,7 @@ class ChatterDiscussionController extends Controller
         }
 
         // *** Let's gaurantee that we always have a generic slug *** //
-        $slug = str_slug($request->title, '-');
+        $slug = Str::slug($request->title, '-');
 
         $discussion_exists = Models::discussion()->where('slug', '=', $slug)->first();
         $incrementer = 1;
